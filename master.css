@@ -137,9 +137,8 @@ p{
 .contact-me{
     background-color: rgba(174, 44, 44, 0.722);    
     padding: 20px;
-    text-decoration: none;
-    color: black;
     border-radius: 3px;
+    border: none;
     
 }
 .resume:hover{
@@ -161,7 +160,7 @@ p{
 
 .links{
     list-style-type: none;
-    margin-left: 3.5rem;
+    margin-left: 3rem;
 }
 .image{
     background-color: beige;
@@ -241,6 +240,10 @@ p{
     margin: auto;
 }
 
+.skill-body .heading{
+    margin-bottom: 15px;
+}
+
 .skill-icons{
     width: 70px;
     height: 70px;
@@ -293,15 +296,17 @@ p{
 
 
 .projects-body{
-    padding: 20px;
+    padding: 10px;
     margin: 0;
+    
 
 }
 .project-items{
     text-align: center;
     padding: 30px;
     display: grid;
-    
+    align-items: center;
+    justify-content: center;
     gap: 3rem;
     
 }
@@ -350,9 +355,14 @@ p{
 }
 .urls{
     padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 .url{
     padding: 4px;
+}
+.url a{
+    font-size: 13px;
 }
 
 .form{
@@ -404,7 +414,7 @@ hr{
 
 @media (max-width:600px){
     html{
-        font-size: 50%;
+        font-size: 70%;
     }
     .main{
         flex-direction: column-reverse;
@@ -430,4 +440,21 @@ hr{
         display: block;
       
     }
+}
+@media(max-width:370px){
+    html{
+        font-size: 60%;
+    }
+    section{
+        padding: 8rem 10%;
+    }
+    .links{
+        margin-left: 0;
+    }
+    .proj-img{
+        width: 210px;
+        height: 150px;
+        
+    }
+
 }
