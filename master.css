@@ -39,7 +39,6 @@ body{
 .name{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
-    cursor: pointer;
     margin-left: 10px;
 
 }
@@ -139,7 +138,7 @@ p{
     padding: 20px;
     border-radius: 3px;
     border: none;
-    
+    cursor: pointer;
 }
 .resume:hover{
     background-color: transparent;
@@ -151,10 +150,10 @@ p{
 }
 
 .contact-me:hover{
-    opacity: 0.8;
+    opacity: 0.9;
     transition: 0.3s;
 }
-.contact:not(:hover){
+.contact-me:not(:hover){
     transition: 0.3s;
 }
 
@@ -162,6 +161,7 @@ p{
     list-style-type: none;
     margin-left: 3rem;
 }
+
 
 .img{
     border-radius: 50%;
@@ -278,6 +278,7 @@ p{
     height: 150px;
 }
 .skill-card:hover{
+    box-shadow: 0px 0px 6px 0px ;
     border-radius: 1rem solid;
     transform:scale(1.05) ;
     
@@ -324,10 +325,20 @@ p{
 }
 .project-1{
     border:2px solid rgb(180, 174, 174);
+    color: grey;
     border-radius: 5px;
     padding: 15px;
     cursor: pointer;
 }
+.project-1:hover{
+    border:2px solid rgb(102, 98, 98);
+    color: rgb(54, 52, 52);
+    transition: 0.2s;
+}
+.project-1:not(:hover){
+    transition: 0.2s;
+}
+
 .proj-img{
     width: 300px;
     height: 170px;
@@ -348,12 +359,27 @@ p{
     flex-direction: column;
     padding: 10px;
 }
+
+.contact-icon img{
+    width: 18px;
+    height: 18px;
+    margin-top: 7px;
+}
+.contact-icon{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+}
 .urls{
-    padding: 10px;
+    padding: 5px;
     align-items: center;
     justify-content: center;
 }
 .url{
+    align-items: center;
     padding: 4px;
 }
 .url a{
@@ -366,7 +392,7 @@ p{
     row-gap: 1rem;
     padding: 20px;
     background-color: bisque;
-
+    border-radius: 3px;
 }
 
 .form textarea{
@@ -386,10 +412,17 @@ p{
     margin: auto;
     padding: 10px;
     border: none;
-    background-color: rgb(208, 78, 78);
+    background-color: rgb(232, 103, 103);
     border-radius: 3px;
     cursor: pointer;
 
+}
+.submit:hover{
+    background-color: rgb(198, 53, 53);
+    transition: 0.3s;
+}
+.submit:not(:hover){
+    transition: 0.3s;
 }
 .contact{
     padding: 5rem 10%;
