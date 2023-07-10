@@ -4,10 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">    
+    <link rel="icon" type="image/png" href="assets/favicon-32x32.png">    
     <link rel="stylesheet" href="master.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
+    
 </head>
 <body>
 
@@ -85,7 +84,7 @@
                   
         </div>
         <div class="dwnld">
-            <button class="resume">Download Resume</button>
+            <a class="resume" href="RESUME_.pdf" download="Resume" >Download Resume</a>
         </div>
     </section>
     <section class="skills" id="skills">
@@ -163,13 +162,13 @@
                 <p class="url"><span class="contact-icon"><img src="assets/linkedin.png"></span> : <a href="https://www.linkedin.com/in/lasya-moravineni/">linkedin.com/in/lasya-moravineni/</a></p>
                 <p class="url"><span class="contact-icon"><img src="assets/github.png"></span> : <a href="https://github.com/LasyaMoravineni">https://github.com/LasyaMoravineni</a></p>
             </div>
-            <div action="#" class="form">
+            <form class="form"  action="https://formsubmit.co/el/vevuyu" method="POST">
                 <h3>Leave a message</h3>
-                <input type="text" placeholder="Your name" >
-                <input type="text" placeholder="Your Email">
-                <textarea rows="10" cols="30" placeholder="Your message"></textarea>
+                <input type="text" placeholder="Your name" name="name">
+                <input type="text" placeholder="Your Email" name="email">
+                <textarea rows="10" cols="30" placeholder="Your message" name="message"></textarea>
                 <button type="submit" class="submit">Submit</button>
-            </div>
+            </form>
 
 
     </div>
