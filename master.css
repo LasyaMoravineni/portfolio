@@ -126,7 +126,8 @@ p{
     padding-left: 0;
 }
 .resume{
-    border: none;
+    text-decoration: none;
+    color: black;
     padding: 20px;
     border-radius: 3px;
     background-color: rgba(174, 44, 44, 0.722);
