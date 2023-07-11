@@ -7,6 +7,7 @@
     <link rel="icon" type="image/png" href="assets/favicon-32x32.png">    
     <link rel="stylesheet" href="master.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
 </head>
 <body>
 
@@ -31,13 +32,13 @@
     
     <div class="mainbody">
         <div class="side_icons">
-            <a href="https://github.com/LasyaMoravineni">
+            <a href="https://github.com/LasyaMoravineni" target="_blank">
                 <img src="assets/github.png" class="giticon">
             </a>
-            <a href="https://www.linkedin.com/in/lasya-moravineni/">
+            <a href="https://www.linkedin.com/in/lasya-moravineni/" target="_blank">
                 <img src="assets/linkedin.png" class="giticon">
             </a>
-            <a href="https://www.instagram.com/lasyamoravineni/">
+            <a href="https://www.instagram.com/lasyamoravineni/" target="_blank">
                 <img src="assets/instagram-logo.png" class="giticon">
             </a>
             
@@ -140,12 +141,12 @@
                     <img class="proj-img" src="assets/quiz-website.png" >
                     <h3 class="proj-name">Simple quiz game </h3>
                     <p class="proj-desc">
-                        This project consists of a basic quiz game that is designed using HTML, CSS and JS.
-                        It has an interactive UI. The tool used here is VSCode.
+                        This project consists of a simple quiz game that is designed using HTML, CSS and JS.
+                        It is responsive and suitable to view in all devices. The tool used here is VSCode.
                         Languages used are HTML, CSS and JS.
  
                     </p>
-                    <button class="showbtn" type="button" onclick="location.href='https://lasyamoravineni.github.io/simple-quiz-game/'">Try this</button>
+                    <div class="try-btn"><a class="showbtn" type="button" href="https://lasyamoravineni.github.io/simple-quiz-game/" target="_blank">Try this</a></div>
                 </div>
             </div>
         </div>
@@ -156,19 +157,20 @@
                 <h2>Contact Me</h2>
             </div>
             <div class="urls">
-                
                 <p class="url"><span class="contact-icon"><img src="assets/email.png"></span> : lasyamacs08@gmail.com</p>
-                
-                <p class="url"><span class="contact-icon"><img src="assets/linkedin.png"></span> : <a href="https://www.linkedin.com/in/lasya-moravineni/">linkedin.com/in/lasya-moravineni/</a></p>
-                <p class="url"><span class="contact-icon"><img src="assets/github.png"></span> : <a href="https://github.com/LasyaMoravineni">https://github.com/LasyaMoravineni</a></p>
+                <p class="url"><span class="contact-icon"><img src="assets/linkedin.png"></span> : <a href="https://www.linkedin.com/in/lasya-moravineni/" target="_blank">LinkedIn</a></p>
+                <p class="url"><span class="contact-icon"><img src="assets/github.png"></span> : <a href="https://github.com/LasyaMoravineni" target="_blank">Github</a></p>
+                <p class="url"><span class="contact-icon"><img src="assets/pin.png"></span> : Hyderabad</p>
+
             </div>
-            <form class="form"  action="https://formsubmit.co/el/vevuyu" method="POST">
+            <form class="form" id="myForm">
                 <h3>Leave a message</h3>
-                <input type="text" placeholder="Your name" name="name">
-                <input type="text" placeholder="Your Email" name="email">
-                <textarea rows="10" cols="30" placeholder="Your message" name="message"></textarea>
-                <button type="submit" class="submit">Submit</button>
-            </form>
+                <input type="text" placeholder="Your name" id="name">
+                <input type="text" placeholder="Your Email" id="email">
+                <textarea rows="10" cols="30" placeholder="Your message" id="message"></textarea>
+                <button type="submit" id="submit" class="submit">Submit</button>
+            </form>    
+            
 
 
     </div>
