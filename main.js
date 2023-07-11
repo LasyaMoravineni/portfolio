@@ -23,3 +23,11 @@ ScrollReveal().reveal('.image', { origin:'right' });
 ScrollReveal().reveal('.name_role, .side_icons', { origin:'left' });
 ScrollReveal().reveal('.skills-items, .about-text, .dwnld, .project-items, .urls, .form' ,{ origin:'bottom' });
 ScrollReveal().reveal('.heading', { origin:'top' });
+
+let btn=document.querySelector(".submit");
+const form=document.getElementById("myForm");
+
+btn.onclick = (event)=>{
+    event.preventDefault();
+    form.reset();
+}
