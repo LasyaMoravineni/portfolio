@@ -28,7 +28,7 @@ body{
 
 
 #menu-btn{
-    font-size: 1.8rem;
+    font-size: 2rem;
     display: none;
 }
 .M{
@@ -345,12 +345,18 @@ p{
     height: 170px;
 }
 .showbtn{
+    text-decoration: none;
+    font-size: 13px;
     border:1.5px solid rgb(166, 162, 162);
     color: rgb(108, 107, 107);
-    padding: 13px;
+    padding: 9px;
     background-color: transparent;
-    border-radius: 25px;
+    border-radius: 30px;
     cursor: pointer;
+}
+
+.try-btn{
+    margin: 4px;
 }
 .showbtn:hover{
     opacity: 0.7;
@@ -359,6 +365,10 @@ p{
     display: flex;
     flex-direction: column;
     padding: 10px;
+}
+
+.contact-body .heading{
+    padding: 15px;
 }
 
 .contact-icon img{
@@ -375,7 +385,9 @@ p{
     text-align: center;
 }
 .urls{
-    padding: 5px;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 2px;
     align-items: center;
     justify-content: center;
 }
@@ -385,7 +397,10 @@ p{
 }
 .url a{
     font-size: 13px;
+    text-decoration: none;
 }
+
+
 
 .form{
     margin-top: 20px;
@@ -449,6 +464,10 @@ hr{
         flex-direction: column-reverse;
 
     }
+    
+}
+
+@media (max-width:640px){
     #menu-btn{
         display: block;
         cursor: pointer;
@@ -459,6 +478,7 @@ hr{
         left: 0;
         top: 100%;
         background-color: bisque;
+        border-radius: 4px;
         display: none;
         
     }
@@ -470,6 +490,7 @@ hr{
       
     }
 }
+
 @media(max-width:370px){
     html{
         font-size: 60%;
