@@ -267,6 +267,12 @@ p{
   }
   @media (min-width: 900px) {
     .skills-items { grid-template-columns: repeat(3, 1fr); }
+
+  }
+  @media(min-width: 1200px){
+    .project-items{grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;}
+       
   }
   
   
@@ -302,6 +308,7 @@ p{
     text-align: center;
     padding: 30px;
     display: grid;
+    
     align-items: center;
     justify-content: center;
     gap: 3rem;
@@ -330,6 +337,7 @@ p{
     border-radius: 5px;
     padding: 15px;
     cursor: pointer;
+    max-width: 700px;
 }
 .project-1:hover{
     border:2px solid rgb(102, 98, 98);
@@ -478,10 +486,12 @@ hr{
         left: 0;
         top: 100%;
         background-color: bisque;
-        border-radius: 4px;
+        border-radius: 3px;
         display: none;
+        padding: 8px;
         
     }
+  
     .links.active{
         display: block;
     }
@@ -491,10 +501,13 @@ hr{
     }
 }
 
+
 @media(max-width:370px){
     html{
         font-size: 60%;
+
     }
+ 
     section{
         padding: 8rem 10%;
     }
