@@ -27,7 +27,7 @@ ScrollReveal().reveal('.heading', { origin:'top' });
 let btn=document.querySelector(".submit");
 const form=document.getElementById("myForm");
 
-btn.onclick = (event)=>{
-    event.preventDefault();
-    form.reset();
-}
+// btn.onclick = (event)=>{
+//     event.preventDefault();
+//     form.reset();
+// }
