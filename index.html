@@ -209,11 +209,14 @@
                 <p class="url"><span class="contact-icon"><img src="assets/pin.png"></span> : Hyderabad</p>
 
             </div>
-            <form class="form" id="myForm">
+            <form class="form" id="myForm" action="https://formsubmit.co/lasyam2023@gmail.com" method="POST">
                 <h3>Leave a message</h3>
-                <input type="text" placeholder="Your name" id="name">
-                <input type="text" placeholder="Your Email" id="email">
-                <textarea rows="10" cols="30" placeholder="Your message" id="message"></textarea>
+                <input type="text" placeholder="Your name" id="name" name="name">
+                <input type="text" placeholder="Your Email" id="email" name="email">
+                <textarea rows="10" cols="30" placeholder="Your message" id="message" name="message"></textarea>
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://lasyamoravineni.github.io/portfolio/">
                 <button type="submit" id="submit" class="submit">Submit</button>
             </form>    
             
