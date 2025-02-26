@@ -48,22 +48,6 @@ body{
     font-size: 18px;   
 }
 
-/* .role p{
-    font-size: 13px;
-} */
-
-
-@keyframes cursor {
-    50% {
-        border-color: transparent;
-    }
-}
-
-@keyframes typing {
-    from{
-        width: 0;
-    }
-}
 
 .btn{
     border: none;
