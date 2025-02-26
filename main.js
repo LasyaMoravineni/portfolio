@@ -18,6 +18,15 @@ ScrollReveal({
     delay: 200,
 });
 
+var typed= new Typed(".auto-type",{
+    strings : [" Web development"," UI/UX"," AI-ML"," Generative AI"],
+    typeSpeed : 30,
+    backSpeed : 30,
+    backDelay: 1000, 
+    startDelay: 500,
+    loop:true
+})
+
 
 ScrollReveal().reveal('.image', { origin:'right' });
 ScrollReveal().reveal('.name_role, .side_icons', { origin:'left' });
