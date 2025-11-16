@@ -19,7 +19,7 @@ ScrollReveal({
 });
 
 var typed= new Typed(".auto-type",{
-    strings : [" Web development"," UI/UX"," AI-ML"," Generative AI"],
+    strings : [" Web development"," AI-ML"," Generative AI"],
     typeSpeed : 30,
     backSpeed : 30,
     backDelay: 1000, 
