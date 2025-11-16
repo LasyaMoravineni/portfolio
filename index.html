@@ -20,6 +20,7 @@
                 <ul>
                 <a href="#" class="btn">Home</a>
                 <a class="btn" href="#about">About</a>
+                <a class="btn" href="#experience">Experience</a>
                 <a class="btn" href="#skills">Skills</a>
                 <a class="btn" href="#projects">Projects</a>
                 <a class="btn" href="#contact">Contact</a>
@@ -48,8 +49,9 @@
                 <h1 class="greeting">Hello,</h1>
                 <h1 class="greeting">I'm <span class="lm">Lasya Moravineni</span></h1>
                 <div class="role">
+                    <p>Technical Apprentice at Cisco</p>
                     <p>Debugging my way through  <span class="auto-type"> </span></p>
-                <p>Look around to get to know me.</p>
+                <!-- <p>Look around to get to know me.</p> -->
                 </div>
                 
                 <div class="cntct">
@@ -67,43 +69,73 @@
     <section id="about">
         
         <div class="heading">
-            <h1>About Me</h1>
+            <h2>About Me</h2>
         </div>
-        <div class="about-text">
-            <p>Hey there! I'm a CSE (AI & ML) graduate from 
-            CMRIT, Hyderabad.  My journey 
-            started with web development, where I honed my 
-            skills in HTML, CSS, JavaScript, and Node.js, 
-            alongside a solid foundation in Java programming 
-            and DSA. But why stop at one thing? I explored 
-            UI/UX and built projects to build a foundation in 
-            design principles.
-            Curious about the ever-evolving 
-            world of Artificial Intelligence, lately, I’ve 
-            been diving deep into AI/ML and 
-            Generative AI, exploring the intersection of 
-            technology and creativity.
-            <br>
+        <div class="about-content">
+                    
 
-            Beyond tech, I find joy in dancing, sketching, 
-            journaling - and all things creative. With an academic 
-            aggregate of 8.73, I’m always eager to learn, 
-            build, and innovate.
-                
-                </p>
-                <p> 
-                    👇Take a look at my resume to know more!
-                </p>
-                  
-        </div>
-        <div class="dwnld">
-            <a class="resume" href="assets/LasyaMoravineni_Resume.pdf.pdf" download="Resume" >Download Resume</a>
-        </div>
+                    <p>Hey there! I'm a CSE (AI & ML) graduate from CMRIT, Hyderabad. 
+                        Currently working as a Software Engineer Trainee (Apprentice) 
+                        at Cisco. <br> During my time in college, I explored different 
+                        areas of tech starting from web development, Java, DSA, SQL 
+                        and even UI/UX design. Over time, I found myself drawn to the 
+                        fast-evolving world of AI, in which I’m still actively 
+                        learning, experimenting, and applying new concepts. 
+                        <br> 
+                        <br> 
+                        Outside the tech bubble, I’m most likely dancing, sketching, 
+                        journaling, or doing something artsy:) 
+                    </p>
+
+                    <a class="resume-btn" href="assets/LasyaMoravineni_Resume.pdf.pdf" download="Resume">
+                        Download Resume
+                    </a>
+                </div>
     </section>
+
+    <section class="experience" id="experience">
+    <div class="experience-body">
+        <div class="heading">
+            <h2>Experience</h2>
+        </div>
+
+        <div class="experience-items">
+
+            <div class="experience-card">
+                <details>
+                    <summary>
+                        <div class="summary-content">
+                            <div>
+                                <h3 class="role">Software Engineer Trainee (Apprentice)</h3>
+                                <p class="company">Cisco, Hyderabad, IN</p>
+                                <p class="duration">August 2025 – Present</p>
+                            </div>
+                            <div class="summary-right">
+                                <span class="arrow"></span>
+                            </div>
+                        </div>
+                    </summary>
+
+                    <div class="description">
+                        <ul>
+                        <li>Structured 12-month training program covering corporate readiness, Python programming, Java Full-Stack development, and communication skills.</li>
+                        <li>Learning workplace communication, collaboration, and engineering practices.</li>
+                        <li>Final phase includes On-the-Job Training (OJT) with Cisco teams to gain hands-on engineering experience.</li>
+                        </ul>
+                        
+                    </div>
+            </details>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
     <section class="skills" id="skills">
         <div class="skill-body">
         <div class="heading">
-            <h2>My Skills</h2>
+            <h2>Skills</h2>
         </div>
         <div class="skills-items">
             <div class="skill-card">
@@ -112,17 +144,14 @@
             </div>
             
             <div class="skill-card">
+                <img src="assets/python.png" class="skill-icons">
+                 <h3 class="skill-name">Python</h3>
+            </div>
+            <div class="skill-card">
                 <img src="assets/java.png" class="skill-icons">
-                 <h3 class="skill-name">Java programming</h3>
+                 <h3 class="skill-name">Java</h3>
             </div>
-            <div class="skill-card">
-                <img src="assets/sql.png" class="skill-icons">
-                 <h3 class="skill-name">SQL</h3>
-            </div>
-            <div class="skill-card">
-                <img src="assets/ui-ux.png" class="skill-icons">
-                 <h3 class="skill-name">UI/UX</h3>
-            </div>
+            
             <div class="skill-card">
                 <img src="assets/artificial-intelligence.png" class="skill-icons">
                  <h3 class="skill-name">AIML</h3>
@@ -131,6 +160,23 @@
                 <img src="assets/generative.png" class="skill-icons">
                  <h3 class="skill-name">Generative AI</h3>
             </div>
+            <div class="skill-card">
+                <img src="assets/ui-ux.png" class="skill-icons">
+                 <h3 class="skill-name">UI/UX</h3>
+            </div>
+            <div class="skill-card">
+                <img src="assets/git-fork.png" class="skill-icons">
+                 <h3 class="skill-name">Version Control</h3>
+            </div>
+            <div class="skill-card">
+                <img src="assets/agile-transition.png" class="skill-icons">
+                 <h3 class="skill-name">Agile</h3>
+            </div>
+            <div class="skill-card">
+                <img src="assets/problem-solving.png" class="skill-icons">
+                 <h3 class="skill-name">Problem Solving</h3>
+            </div>
+
     
              
             
@@ -138,12 +184,13 @@
         <div id="tools">
             <h4>Tools:  </h4>
             <div data-tooltip="VSCode"><img src="assets/vscode.png" class="tools-icons"></div>
-            <div data-tooltip="GitHub"><img src="assets/github.png" class="tools-icons"></div>
+            <div data-tooltip="Git & GitHub"><img src="assets/github.png" class="tools-icons"></div>
+            <div data-tooltip="Jira"><img src="assets/jira.png" class="tools-icons"></div>
             <div data-tooltip="MySQL"><img src="assets/mysql.png" class="tools-icons"></div>
             <div data-tooltip="Figma"><img src="assets/figma.png" class="tools-icons"></div>
-            <div data-tooltip="Jira"><img src="assets/jira.png" class="tools-icons"></div>
             <div data-tooltip="Canva"><img src="assets/canva.png" class="tools-icons"></div>
-            <div data-tooltip="ChatGPT"><img src="assets/chatgpt.png" class="tools-icons"></div>
+            <div data-tooltip="Chatgpt"><img src="assets/chatgpt.png" class="tools-icons"></div>
+
         </div>
         
     </div>
