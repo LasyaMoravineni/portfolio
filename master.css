@@ -641,10 +641,6 @@ details[open] .arrow {
     color: grey;
     border-radius: 5px;
     padding: 15px;
-<<<<<<< HEAD
-=======
-    cursor: pointer;
->>>>>>> fab8b569adf95d414906944c7d87c9fd0e13d00e
     max-width: 700px;
 }
 .project-1:hover{
