@@ -7,6 +7,8 @@
 }
 html{
     scroll-behavior: smooth;
+        overflow-x: hidden;
+
 }
 
 body{
@@ -17,6 +19,8 @@ body{
 .header{
     display: flex;
     width: 100%;
+    left: 0;
+    right: 0;
     position: fixed;
     z-index: 1;
     background-color: rgb(244, 244, 230);
@@ -68,13 +72,20 @@ body{
 	
 }
 
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 section{
-    padding: 10rem 10%;
+    padding: 8rem 5%;
     min-height: 100vh;
 }
 
 
 .main{
+    
     margin: auto;
    padding: 10px;
    display: flex;
@@ -118,10 +129,12 @@ p{
 }
 .cntct{
     display: flex;
-    gap: 40px;
+    gap: 30px;
+    align-items: center;
 }
 
 .contact-me{
+    text-align: center;
     border: 1px solid rgba(174, 44, 44, 0.722);
     background: transparent;    
     padding: 20px;
@@ -140,7 +153,7 @@ p{
 
 .side_icons{
     display: flex;
-    gap: 40px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
 }
@@ -173,11 +186,11 @@ p{
 
 .img{
     border-radius: 50%;
-    width: 20vw;
+    width: 60vw;
     object-fit: cover; 
     object-position: center;
     animation: float 3s ease-in-out infinite;
-    min-width: 230px;
+    max-width: 230px;
 }
 
 @keyframes float{
@@ -196,8 +209,6 @@ p{
 .giticon{
     width: 25px;
     height: 25px;
-    margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 
@@ -473,13 +484,14 @@ details[open] .arrow {
 }
 
 #tools{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 1rem;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
     align-items: center;
-    margin: 30px;
-    padding: 8px;
 }
 .tools-icons{
     width: 50px;
@@ -551,9 +563,12 @@ details[open] .arrow {
 
 @media (min-width: 600px) {
     .skills-items { grid-template-columns: repeat(2, 1fr); }
+    #tools{ grid-template-columns: repeat(2, 1fr); row-gap: 50px; }
+    
   }
   @media (min-width: 900px) {
     .skills-items { grid-template-columns: repeat(3, 1fr); }
+    #tools{ grid-template-columns: repeat(6, 1fr);row-gap: 50px; }
 
   }
   @media(min-width: 1200px){
@@ -780,7 +795,7 @@ hr{
     
 }
 
-@media (max-width:640px){
+@media (max-width:723px){
     #menu-btn{
         display: block;
         cursor: pointer;
