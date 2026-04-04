@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    font-family: Lucida Sans Regular;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
   
@@ -33,11 +33,9 @@ body{
 }
 .M{
     color: brown;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 .name{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 25px;
     margin-left: 10px;
 
@@ -51,7 +49,6 @@ body{
 
 .btn{
     border: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 2px;
     padding: 10px;
     color: black;
@@ -75,16 +72,7 @@ section{
     padding: 10rem 10%;
     min-height: 100vh;
 }
-.side_icons{
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    height: fit-content;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    width: 27px;
-}
+
 
 .main{
     margin: auto;
@@ -111,14 +99,14 @@ section{
 p{
     margin: 3px;
     font-size: 16px;
-    font-family: Lucida Sans;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
    
 }
 .name_role{
     padding: 25px;
 }
 .greeting{
-    font-weight: 200;
+    font-weight: 100;
     font-size: 40px;
     margin-top: 3px;
     margin-bottom: 3px;
@@ -129,9 +117,34 @@ p{
     
 }
 .cntct{
-    padding: 20px;
-    padding-left: 0;
+    display: flex;
+    gap: 40px;
 }
+
+.contact-me{
+    border: 1px solid rgba(174, 44, 44, 0.722);
+    background: transparent;    
+    padding: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.contact-me:hover{
+    background: rgba(174, 44, 44, 0.722);
+    transition: 0.3s;
+}
+.contact-me:not(:hover){
+    transition: 0.3s;
+}
+
+.side_icons{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
 .resume{
     text-decoration: none;
     color: black;
@@ -141,14 +154,7 @@ p{
     cursor: pointer;
     font-size: 16px;
 }
-.contact-me{
-    background-color: rgba(174, 44, 44, 0.722);    
-    padding: 20px;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    font-size: 15px;
-}
+
 .resume:hover{
     background-color: transparent;
     border: 1.5px solid rgba(174, 44, 44, 0.722);
@@ -158,13 +164,6 @@ p{
     transition: 0.5s;
 }
 
-.contact-me:hover{
-    background: rgba(174, 44, 44, 0.722);
-    transform: translateY(-3px);
-}
-.contact-me:not(:hover){
-    transition: 0.3s;
-}
 
 .links{
     list-style-type: none;
@@ -200,17 +199,6 @@ p{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-.giticon:hover{
-    width: 28px;
-    height: 28px;
-    transition: 0.1s;
-    
-}
-.giticon:not(:hover){
-    transition: 0.1s;
-}
-
 
 
 .mode{
@@ -310,7 +298,7 @@ p{
     display: inline-block;
     margin-top: 10px;
     padding: 20px;
-    background: rgba(174, 44, 44, 0.722);
+    border: 1px solid rgba(174, 44, 44, 0.722);
     color: black;
     font-size: 16px;
     border-radius: 3px;
@@ -437,9 +425,10 @@ details[open] .arrow {
 }
 
 .experience-card .duration {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: #666;
     font-style: italic;
+
 }
 
 /* Hidden content styling */
@@ -582,12 +571,7 @@ details[open] .arrow {
     cursor: pointer;
     height: 150px;
 }
-.skill-card:hover{
-    box-shadow: 0px 0px 3px 0px ;
-    border-radius: 8px solid;
-    transform:scale(1.05) ;
-    
-}
+
 .skills{
     padding: 9rem 10%;
     align-items: center;
